@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+//@Component
 public class ProductRepository {
     List<Product> products = new ArrayList<>();
 

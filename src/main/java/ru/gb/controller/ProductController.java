@@ -5,7 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.gb.model.Product;
+import ru.gb.dao.EntityManagerProductDao;
+import ru.gb.dao.ProductDao;
+import ru.gb.entity.Product;
+import ru.gb.repository.ProductRepository;
 import ru.gb.service.ProductService;
 
 @Controller
@@ -14,7 +17,7 @@ import ru.gb.service.ProductService;
 @Slf4j
 public class ProductController {
 
-    private final ProductService productService;
+    private final ProductDao productService;
 
     @RequestMapping(value = "/create", method = RequestMethod.GET)
     public String showForm(Model model) {

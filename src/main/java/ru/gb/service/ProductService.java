@@ -5,10 +5,9 @@ import org.springframework.stereotype.Service;
 import ru.gb.model.Product;
 import ru.gb.repository.ProductRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class ProductService {
 
